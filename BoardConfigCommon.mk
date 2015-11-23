@@ -123,6 +123,30 @@ RECOVERY_GRAPHICS_USE_LINELENGTH := true
 # Scaler
 BOARD_USES_SCALER := true
 
+# SELinux
+BOARD_SEPOLICY_DIRS += \
+    $(LOCAL_PATH)/sepolicy
+
+BOARD_SEPOLICY_UNION += \
+    debuggerd.te \
+    device.te \
+    domain.te \
+    drmserver.te \
+    file.te \
+    file_contexts \
+    gpsd.te \
+    init.te \
+    kernel.te \
+    macloader.te \
+    mediaserver.te \
+    service_contexts \
+    servicemanager.te \
+    sswap.te \
+    system_app.te \
+    system_server.te \
+    vold.te \
+    wpa.te
+
 # Webkit
 ENABLE_WEBGL := true
 
