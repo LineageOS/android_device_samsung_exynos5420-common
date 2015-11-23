@@ -125,7 +125,7 @@ BOARD_USES_SCALER := true
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
-    $(LOCAL_PATH)/sepolicy
+   device/samsung/exynos5420-common/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     debuggerd.te \
