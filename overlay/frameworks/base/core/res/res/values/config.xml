@@ -103,12 +103,6 @@
         <item>"wifi_p2p,13,1,0,-1,true"</item>
     </string-array>
 
-    <!-- This device is not "voice capable"; it's data-only. -->
-    <bool name="config_voice_capable">false</bool>
-
-    <!-- This device does not allow sms service. -->
-    <bool name="config_sms_capable">false</bool>
-
     <!-- An Array of "[ConnectivityManager connectionType],
          [# simultaneous connection types]"  -->
     <string-array translatable="false" name="radioAttributes">
@@ -123,13 +117,6 @@
     <string-array translatable="false" name="config_tether_usb_regexs">
         <item>"rndis0"</item>
         <item>"usb0"</item>
-    </string-array>
-
-    <!-- List of regexpressions describing the interface (if any) that represent tetherable
-         Wifi interfaces.  If the device doesn't want to support tethering over Wifi this
-         should be empty.  An example would be "softap.*" -->
-    <string-array translatable="false" name="config_tether_wifi_regexs">
-        <item>"wlan0"</item>
     </string-array>
 
     <!-- List of regexpressions describing the interface (if any) that represent tetherable
