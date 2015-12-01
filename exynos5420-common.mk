@@ -21,40 +21,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 PRODUCT_CHARACTERISTICS := tablet
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# Device uses high-density artwork where available
-PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xhdpi
-
 # Boot animation
 TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1600
-
-# Camera
-PRODUCT_PACKAGES += \
-    camera.universal5420 \
-    libhwjpeg
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
     make_ext4fs \
     e2fsck \
     setup_fs
-
-# GPS
-PRODUCT_PACKAGES += \
-    gps.universal5420
-
-# HW composer
-PRODUCT_PACKAGES += \
-    libion \
-    hwcomposer.exynos5 \
-    gralloc.exynos5 \
-    memtrack.exynos5
-
-# IR
-PRODUCT_PACKAGES += \
-    consumerir.universal5420
 
 # Keystore
 PRODUCT_PACKAGES += \
@@ -93,10 +69,6 @@ PRODUCT_PACKAGES += \
     libExynosOMX_Core \
     libOMX.Exynos.MP3.Decoder \
     libstagefrighthw
-
-# Power
-PRODUCT_PACKAGES += \
-    power.universal5420
 
 PRODUCT_PACKAGES += \
     init.universal5420.usb.rc \
