@@ -11,6 +11,7 @@ lib/libGLES_trace.so
 vendor/lib/libmalicore.bc
 
 # Mobicore
+bin/cs
 app/FFFFFFFF000000000000000000000001.drbin
 app/mcRegistry/00060308060501020000000000000000.tlbin
 app/mcRegistry/02010000080300030000000000000000.tlbin
