@@ -1,5 +1,4 @@
 # Camera
-lib/hw/camera.universal5420.so
 lib/libexynoscamera.so
 lib/libsecnativefeature.so
 lib/libvdis.so
