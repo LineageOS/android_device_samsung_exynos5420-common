@@ -157,3 +157,6 @@ BOARD_USE_ALP_AUDIO := true
 
 # Linker
 LINKER_FORCED_SHIM_LIBS := /system/vendor/lib/egl/libGLES_mali.so|libpopcountsi2.so
+
+# IR
+IR_HAL_SUFFIX := universal5420
