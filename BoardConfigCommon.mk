@@ -84,6 +84,9 @@ TARGET_SPECIFIC_HEADER_PATH += $(COMMON_PATH)/include
 # Hardware
 BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
 
+# IR
+IR_HAL_SUFFIX := universal5420
+
 # Keymaster
 BOARD_USES_TRUST_KEYMASTER := true
 
