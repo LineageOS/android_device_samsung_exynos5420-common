@@ -13,6 +13,7 @@
 # limitations under the License.
 
 ifneq ($(TARGET_DEVICE),ha3g)
+ifneq ($(TARGET_AUDIOHAL_VARIANT),samsung)
 
 LOCAL_PATH := $(call my-dir)
 
@@ -60,4 +61,5 @@ LOCAL_CFLAGS := -Wno-unused-parameter
 
 include $(BUILD_SHARED_LIBRARY)
 
+endif
 endif
