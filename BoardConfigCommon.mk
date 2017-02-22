@@ -137,6 +137,10 @@ BOARD_USES_WFD := true
 
 # Audio blobs
 TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
+# Audio HAL from hardware/samsung
+TARGET_AUDIOHAL_VARIANT := samsung
+# Advanced Low Power audio support
+BOARD_USE_ALP_AUDIO := true
 
 # Wifi
 BOARD_HAVE_SAMSUNG_WIFI          := true
@@ -151,9 +155,6 @@ WIFI_DRIVER_FW_PATH_STA          := "/system/etc/wifi/bcmdhd_sta.bin"
 WIFI_DRIVER_FW_PATH_AP           := "/system/etc/wifi/bcmdhd_apsta.bin"
 WIFI_DRIVER_NVRAM_PATH_PARAM     := "/sys/module/dhd/parameters/nvram_path"
 WIFI_DRIVER_NVRAM_PATH           := "/system/etc/wifi/nvram_net.txt"
-
-# Advanced Low Power audio support
-BOARD_USE_ALP_AUDIO := true
 
 # Linker
 LINKER_FORCED_SHIM_LIBS := /system/vendor/lib/egl/libGLES_mali.so|libpopcountsi2.so

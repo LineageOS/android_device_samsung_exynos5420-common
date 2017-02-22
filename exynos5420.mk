@@ -23,11 +23,13 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/exynos5420-common/overlay
 # System properties
 -include $(COMMON_PATH)/system_prop.mk
 
-# Audio
+# Packages
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.usb.default \
     audio.r_submix.default \
+    audio.primary.universal5420 \
+    libtinycompress \
     tinymix
 
 PRODUCT_COPY_FILES += \
