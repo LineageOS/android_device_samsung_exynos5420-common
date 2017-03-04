@@ -53,6 +53,53 @@ on property:sys.boot_completed=1
     write /sys/devices/system/cpu/cpufreq/interactive/timer_rate 20000
     write /sys/devices/system/cpu/cpufreq/interactive/timer_slack 20000
 
+# Change permission for interactive governor
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/boost
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/boost
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/boostpulse
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/boostpulse_duration
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/boostpulse_duration
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/cpu_util
+    chmod 0440 /sys/devices/system/cpu/cpufreq/interactive/cpu_util
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/enforced_mode
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/enforced_mode
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/io_is_busy
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/io_is_busy
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/mode
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/mode
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/multi_enter_load
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/multi_enter_load
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/multi_enter_time
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/multi_enter_time
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/multi_exit_load
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/multi_exit_load
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/multi_exit_time
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/multi_exit_time
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/param_index
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/param_index
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/single_enter_load
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/single_enter_load
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/single_enter_time
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/single_enter_time
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/single_exit_load
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/single_exit_load
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/single_exit_time
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/single_exit_time
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/timer_rate
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/timer_rate
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/timer_slack
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/timer_slack
+    chown system system /sys/devices/system/cpu/cpufreq/interactive/target_loads
+    chmod 0660 /sys/devices/system/cpu/cpufreq/interactive/target_loads
+
 on post-fs-data
     setprop vold.post_fs_data_done 1
 
