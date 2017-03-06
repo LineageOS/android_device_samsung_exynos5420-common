@@ -168,7 +168,9 @@ on boot
     chown system radio /sys/class/sec/sec_touchkey/flip_mode
     chown system radio /sys/class/sec/sec_touchkey/boost_level
     chown system radio /sys/class/sec/sec_touchkey/extra_button_event
-    chown root system /sys/class/sec/sec_touchkey/tsp_keys_enabled
+# KeyDisabler permission
+    chown system system /sys/class/sec/sec_touchkey/touchkey_enabled
+    chmod 0660 /sys/class/sec/sec_touchkey/touchkey_enabled
 
 # SENSORS
 # Accelerometer_sensor
