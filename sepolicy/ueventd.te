@@ -10,3 +10,4 @@ allow ueventd emmcblk_device:blk_file { relabelfrom relabelto };
 
 # /sys/devices/virtual/camera/rear/rear_camfw
 allow ueventd video_device:file getattr;
+allow ueventd camera_device:file relabelto;
