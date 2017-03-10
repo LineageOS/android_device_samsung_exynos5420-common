@@ -31,7 +31,10 @@ public class KeyDisabler {
 
     private static String CONTROL_PATH = "/sys/class/sec/sec_touchkey/touchkey_enabled";
 
-    public static boolean isSupported() { return true; }
+    public static boolean isSupported() {
+        return FileUtils.isFileWritable(CONTROL_PATH)
+                && FileUtils.isFileReadable(CONTROL_PATH);
+    }
 
     public static boolean isActive() {
         return (FileUtils.readOneLine(CONTROL_PATH).equals("1"));
