@@ -61,10 +61,8 @@
 /data/app/tlcd_sock							u:object_r:drmserver_socket:s0
 
 /data/.wifiver.info							u:object_r:wifi_data_file:s0
-/efs/wifi(/.*)?								u:object_r:wifi_efs_file:s0
 
 /system/bin/mcDriverDaemon						u:object_r:tee_exec:s0
-/system/bin/macloader							u:object_r:macloader_exec:s0
 /system/bin/gpsd							u:object_r:gpsd_exec:s0
 /system/bin/wifiloader							u:object_r:wifiloader_exec:s0
 
