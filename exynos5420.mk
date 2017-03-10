@@ -162,7 +162,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PACKAGES += \
     libnetcmdiface \
-    macloader \
     wifiloader
 
 # GPU producer to CPU consumer not supported
