@@ -183,9 +183,6 @@
     <!-- Our gralloc has support for protected buffers -->
     <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
 
-    <!-- IpReachability monitor enable/Disable -->
-    <bool translatable="false" name="config_wifi_ipreachability_monitor">false</bool>
-
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">8</integer>
 
