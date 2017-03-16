@@ -154,3 +154,6 @@ WIFI_DRIVER_NVRAM_PATH           := "/system/etc/wifi/nvram_net.txt"
 
 # Advanced Low Power audio support
 BOARD_USE_ALP_AUDIO := true
+
+# Linker
+LINKER_FORCED_SHIM_LIBS := /system/vendor/lib/egl/libGLES_mali.so|libpopcountsi2.so
