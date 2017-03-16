@@ -184,6 +184,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.legacyencoder=true \
     media.stagefright.less-secure=true
 
+# Needed for the r7p0 mali blob
+PRODUCT_PACKAGES += \
+    libpopcountsi2
+
 # call Samsung LSI board support package
 $(call inherit-product, hardware/samsung_slsi-cm/exynos5/exynos5.mk)
 $(call inherit-product, hardware/samsung_slsi-cm/exynos5420/exynos5420.mk)
