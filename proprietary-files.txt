@@ -43,11 +43,7 @@ app/mcRegistry/ffffffffd0000000000000000000000e.tlbin
 vendor/firmware/mfc_fw.bin
 
 # Widevine
-vendor/lib/drm/libdrmwvmplugin.so
 vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib/libwvdrm_L1.so
-vendor/lib/libwvm.so
-vendor/lib/libWVStreamControlAPI_L1.so
 
 # Noise Suppression Controller
 vendor/lib/liblvverx_3.20.03.so
