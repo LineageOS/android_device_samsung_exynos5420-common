@@ -35,5 +35,9 @@ allow system_server user_profile_data_file:dir { read open };
 # tsp_keys_enabled
 allow system_server sysfs_input_file:file { read open write };
 
+# memtrack HAL
+allow system_server debugfs:dir r_dir_perms;
+allow system_server debugfs:file r_file_perms;
+
 # Unknown
 allow system_server kernel:process setsched;
