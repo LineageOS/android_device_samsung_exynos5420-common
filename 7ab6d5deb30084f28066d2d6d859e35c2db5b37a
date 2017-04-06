@@ -16,6 +16,24 @@
       "revId": "7ab6d5deb30084f28066d2d6d859e35c2db5b37a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a51691d_ec673fe9",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 7155
+      },
+      "writtenOn": "2017-04-06T08:59:18Z",
+      "side": 1,
+      "message": "No, :\u003d (immediate expansion) is fine here, since you don\u0027t want to modify this var anywhere else",
+      "parentUuid": "7a51691d_e924d1c7",
+      "revId": "7ab6d5deb30084f28066d2d6d859e35c2db5b37a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
