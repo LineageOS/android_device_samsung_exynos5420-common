@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a51691d_e924d1c7",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 9760
+      },
+      "writtenOn": "2017-04-06T05:26:34Z",
+      "side": 1,
+      "message": "Maybe here need \"+\u003d\" ?",
+      "revId": "7ab6d5deb30084f28066d2d6d859e35c2db5b37a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
