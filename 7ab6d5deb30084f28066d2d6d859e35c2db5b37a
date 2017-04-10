@@ -34,6 +34,40 @@
       "revId": "7ab6d5deb30084f28066d2d6d859e35c2db5b37a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a51691d_9b7d9fb4",
+        "filename": "seccomp/mediacodec-seccomp.policy",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 9760
+      },
+      "writtenOn": "2017-04-10T04:08:59Z",
+      "side": 1,
+      "message": "Are you sure that here fcntl64: 1 ?\nMay be fcntl: 1 ?",
+      "revId": "7ab6d5deb30084f28066d2d6d859e35c2db5b37a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a51691d_7b4ae384",
+        "filename": "seccomp/mediacodec-seccomp.policy",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 9760
+      },
+      "writtenOn": "2017-04-10T04:08:59Z",
+      "side": 1,
+      "message": "And here too...",
+      "revId": "7ab6d5deb30084f28066d2d6d859e35c2db5b37a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
