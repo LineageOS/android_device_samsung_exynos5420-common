@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a486d77_f23ef628",
+        "filename": "sepolicy/logd.te",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2017-04-26T22:13:06Z",
+      "side": 0,
+      "message": "what happened here? unnecessary whitespace changes?",
+      "revId": "398c78a1244998eb8890ca379bdbd855d7478e42",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a486d77_d23bfa36",
+        "filename": "sepolicy/zygote.te",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 3671
+      },
+      "writtenOn": "2017-04-26T22:13:06Z",
+      "side": 0,
+      "message": "same here, unnecessary changes?",
+      "revId": "398c78a1244998eb8890ca379bdbd855d7478e42",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
