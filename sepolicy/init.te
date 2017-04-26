@@ -22,5 +22,4 @@ allow init debugfs:dir mounton;
 allow init debugfs:file write;
 
 # denied { setattr relabelto } name="rear_camfw"
-allow init video_device:file { relabelto setattr };
-allow init camera_device:file relabelto;
+allow init camera_device:file { relabelto setattr };
