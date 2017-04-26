@@ -40,7 +40,8 @@ TARGET_BOOTANIMATION_HALF_RES := true
 # Camera
 PRODUCT_PACKAGES += \
     camera.universal5420 \
-    libhwjpeg
+    libhwjpeg \
+    libcamera_parameters_shim
 
 # GPS
 PRODUCT_PACKAGES += \
