@@ -1,0 +1,1 @@
+allow debuggerd self:capability sys_admin;

@@ -1,3 +1,5 @@
 # OTA update
 allow uncrypt emmcblk_device:blk_file w_file_perms;
 allow uncrypt emmcblk_device:dir r_dir_perms;
+
+allow uncrypt self:capability sys_admin;

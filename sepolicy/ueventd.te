@@ -10,3 +10,5 @@ allow ueventd emmcblk_device:blk_file { relabelfrom relabelto };
 
 # /sys/devices/virtual/camera/rear/rear_camfw
 allow ueventd camera_device:file { getattr relabelto };
+
+allow ueventd self:capability sys_admin;
