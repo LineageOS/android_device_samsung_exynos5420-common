@@ -1,0 +1,1 @@
+allow bootstat self:capability sys_admin;

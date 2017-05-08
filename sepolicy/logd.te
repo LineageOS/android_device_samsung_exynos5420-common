@@ -1,1 +1,3 @@
 allow logd self:capability { dac_override dac_read_search };
+
+allow logd self:capability sys_admin;
