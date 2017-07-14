@@ -137,8 +137,6 @@ on boot
     chmod 0222 /sys/kernel/debug/tracing/trace_marker
     write /sys/kernel/debug/tracing/tracing_on 0
 
-    setprop ro.build.product universal_5420
-    setprop ro.product.device universal_5420
     chown root radio /proc/cmdline
 #    chmod 0666 /dev/pvrsrvkm
 
