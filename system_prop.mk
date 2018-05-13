@@ -16,8 +16,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.gprsclass=10 \
     ro.ril.hsxpa=1 \
-    ro.sec.fle.encryption=true \
-    ro.secwvk=220
 
 # Audio
 PRODUCT_PROPERTY_OVERRIDES += \
