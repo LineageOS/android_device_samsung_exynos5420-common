@@ -1,2 +1,18 @@
-# exfat external sd card
-allow untrusted_app exfat:file read;
+allow shell dnsproxyd_socket:sock_file w_file_perms;
+allow shell efs_file:dir r_dir_perms;
+allow shell media_rw_data_file:dir create_dir_perms;
+allow shell media_rw_data_file:file create_file_perms;
+allow shell shell_data_file:dir create_dir_perms;
+allow shell shell_data_file:file create_file_perms;
+allow shell shell_data_file:file rx_file_perms;
+allow shell shell_exec:file rx_file_perms;
+allow shell system_app_data_file:dir r_dir_perms;
+allow shell system_file:file rx_file_perms;
+allow shell zygote_exec:file rx_file_perms;
+
+# ttySAC2
+allow shell device:chr_file { getattr ioctl };
+
+# SU
+allow shell su:process signal;
+

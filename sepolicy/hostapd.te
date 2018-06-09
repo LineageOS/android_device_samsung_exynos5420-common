@@ -1,0 +1,10 @@
+allow hostapd efs_file:dir r_dir_perms;
+allow hostapd efs_file:file r_file_perms;
+
+allow hostapd system_data_file:file r_file_perms;
+allow hostapd system_data_file:dir rw_dir_perms;
+
+allow hostapd wifi_efs_file:dir r_dir_perms;
+allow hostapd wifi_efs_file:file r_file_perms;
+
+allow hostapd wifi_data_file:sock_file { create setattr write unlink };
