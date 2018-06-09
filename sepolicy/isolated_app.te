@@ -1,0 +1,6 @@
+# dboxed_process
+allow isolated_app app_data_file:dir getattr;
+allow isolated_app shell_data_file:dir search;
+
+# First boot
+allow isolated_app tombstone_data_file:dir rw_dir_perms;
