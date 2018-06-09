@@ -29,7 +29,12 @@
 /dev/video44								u:object_r:camera_device:s0
 /dev/media2								u:object_r:camera_device:s0
 
-/dev/block/mmcblk0p[0-9]*						u:object_r:emmcblk_device:s0
+/dev/block/mmcblk0p[0-8]*						u:object_r:emmcblk_device:s0
+/dev/block/mmcblk0p9							u:object_r:boot_block_device:s0
+/dev/block/mmcblk0p10							u:object_r:recovery_block_device:s0
+/dev/block/mmcblk0p19							u:object_r:cache_block_device:s0
+/dev/block/mmcblk0p20							u:object_r:system_block_device:s0
+/dev/block/mmcblk0p21							u:object_r:userdata_block_device:s0
 
 /efs/bluetooth(/.*)?							u:object_r:bluetooth_data_file:s0
 
