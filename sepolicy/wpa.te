@@ -6,3 +6,5 @@ allow wpa wifi_efs_file:file { open read write };
 allow wpa efs_file:dir search;
 
 allow wpa wifi_data_file:sock_file { create setattr write unlink };
+
+allow wpa sudaemon:unix_dgram_socket sendto;
