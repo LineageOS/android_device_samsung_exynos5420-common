@@ -181,6 +181,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     libpopcountsi2
 
+# call the common proprietary setup
+$(call inherit-product, vendor/samsung/exynos5420-common/exynos5420-common-vendor.mk)
+
 # call Samsung LSI board support package
 $(call inherit-product, hardware/samsung_slsi-cm/exynos5/exynos5.mk)
 $(call inherit-product, hardware/samsung_slsi-cm/exynos5420/exynos5420.mk)
