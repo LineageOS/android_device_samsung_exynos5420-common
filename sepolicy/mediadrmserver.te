@@ -1,0 +1,10 @@
+# s5p-mem
+allow mediadrmserver secmem_device:chr_file rw_file_perms;
+
+# traverse /efs directory list
+allow mediadrmserver efs_file:dir r_dir_perms;
+
+# /efs/wv.keys /etc/cpk/ /efs/h2k.dat
+allow mediadrmserver cpk_efs_file:dir r_dir_perms;
+allow mediadrmserver cpk_efs_file:file r_file_perms;
+
