@@ -23,6 +23,7 @@ app/FFFFFFFF000000000000000000000001.drbin
 vendor/firmware/mfc_fw.bin
 
 # Widevine
+vendor/lib/liboemcrypto.so
 vendor/lib/mediadrm/libwvdrmengine.so
 
 # Noise Suppression Controller
