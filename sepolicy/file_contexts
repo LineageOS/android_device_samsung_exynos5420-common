@@ -42,6 +42,11 @@
 /efs/imei(/.*)?								u:object_r:imei_efs_file:s0
 /efs/nv_data.bin(.*)							u:object_r:bin_nv_data_efs_file:s0
 
+# Widevine
+/efs/cpk(/.*)								u:object_r:cpk_efs_file:s0
+/efs/h2k.dat								u:object_r:cpk_efs_file:s0
+/efs/wv.keys								u:object_r:cpk_efs_file:s0
+
 # camera
 /sys/devices/virtual/camera/.*/.*_camfw					u:object_r:camera_device:s0
 
