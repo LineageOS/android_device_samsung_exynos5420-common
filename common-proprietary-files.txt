@@ -112,3 +112,7 @@ vendor/firmware/srp_vliw.bin
 
 # Exynos AVC Encoder (OpenMAX)
 lib/omx/libOMX.Exynos.AVC.Encoder.so
+
+# Samsung Device permission
+framework/com.samsung.device.jar
+etc/permissions/com.samsung.device.xml

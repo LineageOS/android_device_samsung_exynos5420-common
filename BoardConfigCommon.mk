@@ -16,6 +16,11 @@
 
 COMMON_PATH := device/samsung/exynos5420-common
 
+# Samsung Device
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/samsung_device/com.samsung.device.jar:system/framework/com.samsung.device.jar \
+    $(COMMON_PATH)/samsung_device/com.samsung.device.xml:system/etc/permissions/com.samsung.device.xml
+
 # Platform
 TARGET_BOARD_PLATFORM := exynos5
 TARGET_SLSI_VARIANT := cm
