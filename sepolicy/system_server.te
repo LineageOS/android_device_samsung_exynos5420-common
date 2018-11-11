@@ -41,5 +41,10 @@ allow system_server sysfs_input_file:file { read open write };
 allow system_server debugfs:dir r_dir_perms;
 allow system_server debugfs:file r_file_perms;
 
+# Alarms
+allow system_server persist_file:dir r_dir_perms;
+allow system_server persist_alarm_file:dir rw_dir_perms;
+allow system_server persist_alarm_file:file create_file_perms;
+
 # Unknown
 allow system_server kernel:process setsched;
