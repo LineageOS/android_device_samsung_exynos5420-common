@@ -18,6 +18,14 @@ on post-fs
     symlink /sdcard /storage/sdcard0
     symlink /sdcard1 /storage/sdcard1
 
+    # Restore contexts on /persist
+    chown system system /persist
+    chmod 0770 /persist
+    restorecon_recursive /persist
+
+    # create /persist/alarm if not exist
+    mkdir /persist/alarm 0771 system system
+
 on early-init
     write /sys/block/mmcblk0/queue/read_ahead_kb 512
     write /sys/block/mmcblk1/queue/read_ahead_kb 512
@@ -392,19 +400,6 @@ on fs
 
 # Support Preload install apks
 #    mkdir /preload 0771 system system
-
-#For Absolute Persistence Partition
-#    mkdir /persdata 0755 system system
-#    mkdir /persdata/absolute 0750 system system
-
-#    wait /dev/block/platform/dw_mmc.0/by-name/PERSDATA
-#    check_fs /dev/block/platform/dw_mmc.0/by-name/PERSDATA ext4
-#    mount ext4 /dev/block/platform/dw_mmc.0/by-name/PERSDATA /persdata/absolute nosuid nodev barrier=1
-
-#    chown system system /persdata
-#    chmod 0755 /persdata
-#    chown system system /persdata/absolute
-#    chmod 0750 /persdata/absolute
 
 # Permissions for backlight
     chown system system /sys/class/backlight/panel/brightness
