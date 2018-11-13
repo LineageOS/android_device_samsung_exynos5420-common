@@ -7,6 +7,3 @@ type emmcblk_device, file_type;
 
 # /dev/umts_boot*, /dev/ehci_power
 type mif_device, dev_type;
-
-# Persistence partition mounted to /persist
-type persist_block_device, dev_type;
