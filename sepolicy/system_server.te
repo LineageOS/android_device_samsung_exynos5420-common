@@ -48,3 +48,4 @@ allow system_server persist_alarm_file:file create_file_perms;
 
 # Unknown
 allow system_server kernel:process setsched;
+allow system_server untrusted_app_devpts:chr_file { read write };
